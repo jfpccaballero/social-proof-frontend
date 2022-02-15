@@ -1,0 +1,120 @@
+body {
+    font-family: "Spartan", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 38px;
+    font-weight: 800;
+}
+h2 {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}
+h3 {
+    color: hsl(303, 10%, 53%);
+    font-size: 16px;
+    margin-top: 0;
+}
+.attribution {font-size: 11px; text-align: center;}
+.attribution a {color: hsl(228, 45%, 44%);}
+.bg {position: absolute;}
+.bg-dk-top {
+    width: 40%;
+    top: 0;
+    left: 0;
+}
+.bg-dk-bottom {
+    width: 65%;
+    bottom: 0;
+    right: 0;
+}
+.bg-mb-top{ display: none;}
+.bg-mb-bottom{ display: none;}
+.container { margin: 2% 7.5% ;}
+
+.content { width: 35%; float: left;}
+.content p { color: hsl(303, 10%, 53%); font-weight: 400;}
+.first {margin-bottom: 2rem;}
+.last {margin-top: 2rem;}
+.middle {margin: 1rem 2rem;}
+.profile {
+    border-radius: 100%;
+    float: left;
+    margin-right: 2rem;
+    width: 46px;
+}
+.rate {
+    width: 50%;
+    float: right;
+    margin: 3rem 0 0;
+}
+.rate div {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 0.5rem 0;
+    width: 75%;
+}
+.rate img {
+    margin: 0.5rem 0.25rem;
+    width: 17px;
+    height: 16px;
+}
+.rate p {
+    color: hsl(300, 43%, 22%);
+    font-weight: 600;
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
+.rate-guru {margin: 1rem 0 1rem 3.75rem;}
+.rate-BestTech {margin-left: 7.5rem;}
+.reviews {
+    width: 100%;
+    display: flex;
+    padding: 4rem 0 2rem;
+}
+.reviews div {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+.reviews p {
+    color: #fff;
+    font-weight: 400;
+}
+.star { padding-left: 1.5rem;}
+
+@media screen and (max-width: 1351px) {
+    .rate {width: 55%;}
+    .rate div {width: 100%;}
+    .rate-BestTech, .rate-guru {margin-left: 0;}
+}
+@media screen and (max-width: 992px) {
+    .bg-dk-top {display: none;}
+    .bg-dk-bottom {display: none;}
+    .bg-mb-top{ 
+        display: initial;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .bg-mb-bottom{ 
+        display: initial;
+        width: 100%;
+        bottom: -100px;
+        right: 0;
+    }
+    .content {width: 100%; text-align: center;}
+    .middle {margin: 1rem 0;}
+    .rate {width: 100%;}
+    .rate div {padding: 0.5rem 0; justify-content: center;}
+    .reviews {display: inline-block;}
+}
+@media screen and (max-width:585px) {
+    .rate div {display: block; text-align: center;}
+    .rate p {padding: 0 0 0.5rem;}
+}
